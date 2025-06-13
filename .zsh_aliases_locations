@@ -1,0 +1,42 @@
+# General Aliases
+alias cd-dev="cd ~/brs/development"
+alias cd-dotfiles="cd ~/dotfiles"
+
+
+# BRS Teesheet
+alias cd-brs-teesheet="cd ~/brs/development/brs-teesheet"
+alias cd-brs-consents-api="cd ~/brs/development/brs-consents-api"
+alias cd-brs-members-module="cd ~/brs/development/brs-members-module"
+alias cd-brs-visitors-module="cd ~/brs/development/brs-visitors-module"
+alias cd-teesheet-api-client="cd ~/brs/development/teesheet-api-client"
+
+alias cd-teesheet="cd ~/brs/development/brs-teesheet"
+alias cd-consents="cd ~/brs/development/brs-consents-api"
+alias cd-members="cd ~/brs/development/brs-members-module"
+alias cd-visitors="cd ~/brs/development/brs-visitors-module"
+alias cd-rts="cd ~/brs/development/teesheet-api-client"
+
+# BRS Modules
+alias cd-brs-open-competitions="cd ~/brs/development/brs-open-competitions"
+alias cd-brs-competitions-module="cd ~/brs/development/brs-competitions-module"
+
+# Person Directory Service
+alias cd-brs-directory-service-api="cd ~/brs/development/brs-directory-service-api"
+alias cd-brs-organisation-service-api="cd ~/brs/development/brs-organisation-service-api"
+alias cd-brs-rules-api="cd ~/brs/development/brs-rules-api"
+alias cd-person-data-aggregation-tool="cd ~/brs/development/person-data-aggregation-tool"
+
+# BRS Admin
+alias cd-brs-admin-api="cd ~/brs/development/brs-admin-api"
+alias cd-brs-admin-app="cd ~/brs/development/brs-admin-app"
+
+# BRS GolfPlus
+alias cd-brs-golf-plus-admin-frontend="cd ~/brs/development/brs-facilities-module-admin-frontend"
+alias cd-brs-golf-plus-api="cd ~/brs/development/brs-facilities-module-api"
+alias cd-brs-golf-plus-frontend="cd ~/brs/development/brs-facilities-module-frontend"
+
+# G1/Memberships
+alias cd-memberships-api="cd ~/brs/development/memberships-api"
+alias cd-memberships-frontend="cd ~/brs/development/memberships-frontend"
+alias cd-sync-report="cd ~/brs/development/sync-report"
+alias cd-wallet-service="cd ~/brs/development/wallet-service"

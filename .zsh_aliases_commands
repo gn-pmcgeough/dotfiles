@@ -1,0 +1,32 @@
+# Applications
+# alias phpstorm='open -na "PhpStorm.app" '
+# alias phpstorm='open -na -F "PhpStorm.app"'
+# alias phpstorm='open -na "/Applications/PhpStorm.app"'
+alias phpstorm='open -na "PhpStorm.app" --args --line 1 --column 1'
+
+
+# Git
+alias gb='git branch '
+alias gc='git commit '
+alias gca='git add . && gc -am '
+alias gco='git checkout '
+alias gd='git diff'
+alias gdc='git diff --name-only --diff-filter=U'
+alias gdmb='git branch --merged | grep -v -e master -e develop | xargs git branch -d'
+alias gmod='git merge origin/develop'
+alias grh='git reset --hard'
+alias gp='git pull'
+alias gs='git status'
+alias gsmb='git fetch origin; git branch --merged' # git show merged branches
+alias wip="git add . && gc -am 'WIP'"
+alias wipm="git add . && gc -am 'WIP - "
+# space allows you to add followup text
+# i.e. gco -b new_branch
+
+
+# Docker
+alias dce='docker-compose exec'
+
+
+# Tools
+alias git-dirty='~/brs/development/tools/ul-git.sh'
