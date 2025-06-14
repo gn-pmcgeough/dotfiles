@@ -12,11 +12,11 @@ POSTMAN=$DEV/postman
 SANDBOX=$DEV/sandbox
 TOOLS=$DEV/tools
 
+# BRS Dev
 git clone git@github.com:gn-pmcgeough/database.git $DB
 git clone git@github.com:gn-pmcgeough/documents.git $DOCS
 git clone git@github.com:gn-pmcgeough/jira.git $JIRA
 git clone git@github.com:gn-pmcgeough/postman.git $POSTMAN
-git clone git@github.com:gn-pmcgeough/sandbox.git $SANDBOX
 git clone git@github.com:gn-pmcgeough/tools.git $TOOLS
 
 # BRS Applications

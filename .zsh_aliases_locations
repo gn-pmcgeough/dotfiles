@@ -1,6 +1,6 @@
 # General Aliases
 alias cd-dev="cd ~/brs/development"
-alias cd-dotfiles="cd ~/dotfiles"
+alias cd-dotfiles="cd ~/.dotfiles"
 
 
 # BRS Teesheet
@@ -26,7 +26,7 @@ alias cd-brs-organisation-service-api="cd ~/brs/development/brs-organisation-ser
 alias cd-brs-rules-api="cd ~/brs/development/brs-rules-api"
 alias cd-person-data-aggregation-tool="cd ~/brs/development/person-data-aggregation-tool"
 
-# BRS Admin
+# BRS Admin Api
 alias cd-brs-admin-api="cd ~/brs/development/brs-admin-api"
 alias cd-brs-admin-app="cd ~/brs/development/brs-admin-app"
 
