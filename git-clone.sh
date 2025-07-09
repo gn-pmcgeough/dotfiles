@@ -12,6 +12,8 @@ POSTMAN=$DEV/postman
 SANDBOX=$DEV/sandbox
 TOOLS=$DEV/tools
 
+mkdir -p "$APPS" "$DB" "$DOCS" "$JIRA" "$POSTMAN" "$SANDBOX" "$TOOLS"
+
 # BRS Dev
 git clone git@github.com:gn-pmcgeough/database.git $DB
 git clone git@github.com:gn-pmcgeough/documents.git $DOCS

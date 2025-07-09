@@ -1,42 +1,48 @@
 # General Aliases
-alias cd-dev="cd ~/brs/development"
 alias cd-dotfiles="cd ~/.dotfiles"
-
+alias cd-dev="cd ~/brs/development"
+alias cd-apps="cd ~/brs/development/apps"
+alias cd-database="cd ~/brs/development/database"
+alias cd-documents="cd ~/brs/development/documents"
+alias cd-jira="cd ~/brs/development/jira"
+alias cd-postman="cd ~/brs/development/postman"
+alias cd-sandbox="cd ~/brs/development/sandbox"
+alias cd-tools="cd ~/brs/development/tools"
 
 # BRS Teesheet
-alias cd-brs-teesheet="cd ~/brs/development/brs-teesheet"
-alias cd-brs-consents-api="cd ~/brs/development/brs-consents-api"
-alias cd-brs-members-module="cd ~/brs/development/brs-members-module"
-alias cd-brs-visitors-module="cd ~/brs/development/brs-visitors-module"
-alias cd-teesheet-api-client="cd ~/brs/development/teesheet-api-client"
+alias cd-brs-teesheet="cd ~/brs/development/apps/brs-teesheet"
+alias cd-brs-consents-api="cd ~/brs/development/apps/brs-consents-api"
+alias cd-brs-members-module="cd ~/brs/development/apps/brs-members-module"
+alias cd-brs-visitors-module="cd ~/brs/development/apps/brs-visitors-module"
+alias cd-teesheet-api-client="cd ~/brs/development/apps/teesheet-api-client"
 
-alias cd-teesheet="cd ~/brs/development/brs-teesheet"
-alias cd-consents="cd ~/brs/development/brs-consents-api"
-alias cd-members="cd ~/brs/development/brs-members-module"
-alias cd-visitors="cd ~/brs/development/brs-visitors-module"
-alias cd-rts="cd ~/brs/development/teesheet-api-client"
+alias cd-teesheet="cd ~/brs/development/apps/brs-teesheet"
+alias cd-consents="cd ~/brs/development/apps/brs-consents-api"
+alias cd-members="cd ~/brs/development/apps/brs-members-module"
+alias cd-visitors="cd ~/brs/development/apps/brs-visitors-module"
+alias cd-rts="cd ~/brs/development/apps/teesheet-api-client"
 
 # BRS Modules
-alias cd-brs-open-competitions="cd ~/brs/development/brs-open-competitions"
-alias cd-brs-competitions-module="cd ~/brs/development/brs-competitions-module"
+alias cd-brs-open-competitions="cd ~/brs/development/apps/brs-open-competitions"
+alias cd-brs-competitions-module="cd ~/brs/development/apps/brs-competitions-module"
 
 # Person Directory Service
-alias cd-brs-directory-service-api="cd ~/brs/development/brs-directory-service-api"
-alias cd-brs-organisation-service-api="cd ~/brs/development/brs-organisation-service-api"
-alias cd-brs-rules-api="cd ~/brs/development/brs-rules-api"
-alias cd-person-data-aggregation-tool="cd ~/brs/development/person-data-aggregation-tool"
+alias cd-brs-directory-service-api="cd ~/brs/development/apps/brs-directory-service-api"
+alias cd-brs-organisation-service-api="cd ~/brs/development/apps/brs-organisation-service-api"
+alias cd-brs-rules-api="cd ~/brs/development/apps/brs-rules-api"
+alias cd-person-data-aggregation-tool="cd ~/brs/development/apps/person-data-aggregation-tool"
 
 # BRS Admin Api
-alias cd-brs-admin-api="cd ~/brs/development/brs-admin-api"
-alias cd-brs-admin-app="cd ~/brs/development/brs-admin-app"
+alias cd-brs-admin-api="cd ~/brs/development/apps/brs-admin-api"
+alias cd-brs-admin-app="cd ~/brs/development/apps/brs-admin-app"
 
 # BRS GolfPlus
-alias cd-brs-golf-plus-admin-frontend="cd ~/brs/development/brs-facilities-module-admin-frontend"
-alias cd-brs-golf-plus-api="cd ~/brs/development/brs-facilities-module-api"
-alias cd-brs-golf-plus-frontend="cd ~/brs/development/brs-facilities-module-frontend"
+alias cd-brs-golf-plus-admin-frontend="cd ~/brs/development/apps/brs-facilities-module-admin-frontend"
+alias cd-brs-golf-plus-api="cd ~/brs/development/apps/brs-facilities-module-api"
+alias cd-brs-golf-plus-frontend="cd ~/brs/development/apps/brs-facilities-module-frontend"
 
 # G1/Memberships
-alias cd-memberships-api="cd ~/brs/development/memberships-api"
-alias cd-memberships-frontend="cd ~/brs/development/memberships-frontend"
-alias cd-sync-report="cd ~/brs/development/sync-report"
-alias cd-wallet-service="cd ~/brs/development/wallet-service"
+alias cd-memberships-api="cd ~/brs/development/apps/memberships-api"
+alias cd-memberships-frontend="cd ~/brs/development/apps/memberships-frontend"
+alias cd-sync-report="cd ~/brs/development/apps/sync-report"
+alias cd-wallet-service="cd ~/brs/development/apps/wallet-service"

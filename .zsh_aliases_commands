@@ -26,7 +26,14 @@ alias wipm="git add . && gc -am 'WIP - "
 
 # Docker
 alias dce='docker-compose exec'
+alias docker-rebuild='docker-compose down && docker-compose up --build -d'
+alias docker-down-all='docker compose ls --quiet | xargs -n1 -I{} docker compose -p {} down'
+alias docker-quit='docker-down-all && osascript -e '\''quit app "Docker Desktop"'\'''
 
 
 # Tools
 alias git-dirty='~/brs/development/tools/ul-git.sh'
+
+
+# App Specific
+alias brs-clear-cache='docker compose down && rm -rf var/cache vendor && docker compose up -d && bin/teesheet composer install -n && bin/teesheet console cache:clear'
