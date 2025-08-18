@@ -37,3 +37,6 @@ alias git-dirty='~/brs/development/tools/ul-git.sh'
 
 # App Specific
 alias brs-clear-cache='docker compose down && rm -rf var/cache vendor && docker compose up -d && bin/teesheet composer install -n && bin/teesheet console cache:clear'
+
+alias brs-consents-on='(cd ~/brs/development/apps/brs-consents-api && docker compose up -d)'
+alias brs-consents-off='(cd ~/brs/development/apps/brs-consents-api && docker compose down)'
