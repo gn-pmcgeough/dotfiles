@@ -48,18 +48,12 @@ if ! command -v brew >/dev/null 2>&1; then
     print_status "Installing Homebrew..."
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-    # Add Homebrew to PATH for Apple Silicon Macs
-    if [[ $(uname -m) == "arm64" ]]; then
-        echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
-        eval "$(/opt/homebrew/bin/brew shellenv)"
-    fi
+    # Add Homebrew to PATH
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
 else
     print_status "Homebrew already installed"
 fi
-
-# Install essential tools
-print_status "Installing essential tools..."
-brew install git stow
 
 # Clone dotfiles repository
 if [[ -d "$DOTFILES_DIR" ]]; then
@@ -73,10 +67,7 @@ git clone "$DOTFILES_REPO" "$DOTFILES_DIR"
 # Make install script executable
 chmod +x "$DOTFILES_DIR/install.sh"
 
-# Run the main installation
-print_status "Running main installation..."
-cd "$DOTFILES_DIR"
-./install.sh
-
-print_status "Bootstrap complete! Your dotfiles are now installed."
-print_status "You may want to restart your terminal or run 'source ~/.zshrc' to apply changes."
+print_status "Bootstrap complete. To continue, run the following command:"
+echo
+echo "cd $DOTFILES_DIR && ./install.sh"
+echo
