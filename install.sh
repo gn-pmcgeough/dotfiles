@@ -38,6 +38,17 @@ if [[ ! -d "$DOTFILES_DIR" ]] || [[ "$PWD" != "$DOTFILES_DIR" ]]; then
     exit 1
 fi
 
+# Install Oh My Zsh
+install_oh_my_zsh() {
+    if [[ ! -d "$HOME/.oh-my-zsh" ]]; then
+        print_status "Installing Oh My Zsh..."
+        # Run the installer non-interactively, without changing shell
+        sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+    else
+        print_status "Oh My Zsh already installed"
+    fi
+}
+
 # Backup existing dotfiles
 backup_existing() {
     local backup_dir="$HOME/.dotfiles_backup_$(date +%Y%m%d_%H%M%S)"
@@ -105,6 +116,9 @@ setup_git() {
 # Main installation flow
 main() {
     print_status "Starting dotfiles installation..."
+
+    # Install Oh My Zsh
+    install_oh_my_zsh
 
     # Backup existing files
     backup_existing
