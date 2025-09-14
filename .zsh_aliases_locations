@@ -30,7 +30,13 @@ alias cd-brs-competitions-module="cd ~/brs/development/apps/brs-competitions-mod
 alias cd-brs-directory-service-api="cd ~/brs/development/apps/brs-directory-service-api"
 alias cd-brs-organisation-service-api="cd ~/brs/development/apps/brs-organisation-service-api"
 alias cd-brs-rules-api="cd ~/brs/development/apps/brs-rules-api"
+alias cd-pds-infra-emulator="cd ~/brs/development/apps/pds-infra-emulator"
 alias cd-person-data-aggregation-tool="cd ~/brs/development/apps/person-data-aggregation-tool"
+
+alias cd-directory-service="cd ~/brs/development/apps/brs-directory-service-api"
+alias cd-organisation-service="cd ~/brs/development/apps/brs-organisation-service-api"
+alias cd-rules="cd ~/brs/development/apps/brs-rules-api"
+alias cd-emulator="cd ~/brs/development/apps/pds-infra-emulator"
 
 # BRS Admin Api
 alias cd-brs-admin-api="cd ~/brs/development/apps/brs-admin-api"
