@@ -1,6 +1,6 @@
 #!/bin/bash
 # Bootstrap script for dotfiles setup on fresh Mac
-# Usage: curl -fsSL https://raw.githubusercontent.com/yourusername/dotfiles/main/bootstrap.sh | bash
+# Usage: curl -fsSL https://raw.githubusercontent.com/gn-pmcgeough/dotfiles/main/bootstrap.sh | bash
 
 set -e  # Exit on any error
 
@@ -13,7 +13,7 @@ YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 
 # Configuration
-DOTFILES_REPO="https://github.com/yourusername/dotfiles.git"  # Change this to your repo
+DOTFILES_REPO="https://github.com/gn-pmcgeough/dotfiles.git"
 DOTFILES_DIR="$HOME/.dotfiles"
 
 # Function to print colored output
@@ -63,13 +63,12 @@ brew install git stow
 
 # Clone dotfiles repository
 if [[ -d "$DOTFILES_DIR" ]]; then
-    print_warning "Dotfiles directory already exists. Updating..."
-    cd "$DOTFILES_DIR"
-    git pull
-else
-    print_status "Cloning dotfiles repository..."
-    git clone "$DOTFILES_REPO" "$DOTFILES_DIR"
+    print_warning "Dotfiles directory already exists. Overwriting..."
+    rm -rf "$DOTFILES_DIR"
 fi
+print_status "Cloning dotfiles repository..."
+git clone "$DOTFILES_REPO" "$DOTFILES_DIR"
+
 
 # Make install script executable
 chmod +x "$DOTFILES_DIR/install.sh"

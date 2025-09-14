@@ -59,63 +59,13 @@ backup_existing() {
     fi
 }
 
-# Ask user for profile selection
-select_profile() {
-    echo ""
-    print_question "Which setup profile would you like to use?"
-    echo "1) Work"
-    echo "2) Personal"
-    echo "3) Both"
-    echo ""
-
-    while true; do
-        read -p "Enter your choice (1-3): " choice
-        case $choice in
-            1) echo "work"; break ;;
-            2) echo "personal"; break ;;
-            3) echo "both"; break ;;
-            *) echo "Please enter 1, 2, or 3" ;;
-        esac
-    done
-}
-
 # Install Homebrew packages
 install_homebrew_packages() {
-    local profile=$1
+    print_status "Installing Homebrew packages..."
 
-    print_status "Installing Homebrew packages for profile: $profile"
-
-    # Install common packages
     if [[ -f "Brewfile" ]]; then
-        print_status "Installing common packages..."
         brew bundle --file=Brewfile
     fi
-
-    # Install profile-specific packages
-    case $profile in
-        work)
-            if [[ -f "Brewfile_work" ]]; then
-                print_status "Installing work-specific packages..."
-                brew bundle --file=Brewfile_work
-            fi
-            ;;
-        personal)
-            if [[ -f "Brewfile_personal" ]]; then
-                print_status "Installing personal packages..."
-                brew bundle --file=Brewfile_personal
-            fi
-            ;;
-        both)
-            if [[ -f "Brewfile_work" ]]; then
-                print_status "Installing work-specific packages..."
-                brew bundle --file=Brewfile_work
-            fi
-            if [[ -f "Brewfile_personal" ]]; then
-                print_status "Installing personal packages..."
-                brew bundle --file=Brewfile_personal
-            fi
-            ;;
-    esac
 }
 
 # Stow dotfiles
@@ -159,11 +109,8 @@ main() {
     # Backup existing files
     backup_existing
 
-    # Get user's profile preference
-    PROFILE=$(select_profile)
-
     # Install Homebrew packages
-    install_homebrew_packages "$PROFILE"
+    install_homebrew_packages
 
     # Stow dotfiles
     stow_dotfiles
@@ -176,7 +123,6 @@ main() {
     chmod +x git-clone.sh 2>/dev/null || true
 
     print_status "Installation complete!"
-    print_status "Profile used: $PROFILE"
     print_status ""
     print_status "Next steps:"
     print_status "1. Restart your terminal or run 'source ~/.zshrc'"
