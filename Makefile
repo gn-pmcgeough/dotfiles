@@ -1,13 +1,12 @@
 # Dotfiles Makefile
 # Convenient commands for managing your dotfiles
 
-.PHONY: help install sync update-brew update-stow status clean
+.PHONY: help sync update-brew update-stow status clean
 
 # Default target
 help:
 	@echo "Dotfiles Management Commands:"
 	@echo ""
-	@echo "  install       Run full installation"
 	@echo "  sync          Pull latest changes and sync"
 	@echo "  update-brew   Update only Homebrew packages"
 	@echo "  update-stow   Re-stow dotfiles only"
@@ -15,11 +14,6 @@ help:
 	@echo "  clean         Clean up backup files and logs"
 	@echo ""
 	@echo "Usage: make <command>"
-
-# Full installation
-install:
-	@echo "🔧 Running full installation..."
-	@./install.sh
 
 # Sync dotfiles
 sync:

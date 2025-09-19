@@ -2,61 +2,66 @@
 
 These are my personal dotfiles for macOS, managed with GNU Stow and Homebrew.
 
-## One-Command Setup
+## Installation
 
-To set up a new machine, run the following command in your terminal. It will automatically install all the necessary tools and applications.
+This guide provides instructions for a manual installation of the dotfiles.
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/gn-pmcgeough/dotfiles/main/booststrap.sh | bash
-```
-
-### How it Works
-
-The bootstrap script will:
-
-1.  Install Xcode Command Line Tools and Homebrew.
-2.  Install `git` and `stow`.
-3.  Clone the repository to `~/.dotfiles`.
-4.  Run the `install.sh` script to:
-    *   Install all applications from the `Brewfile`.
-    *   Create symbolic links for your dotfiles using `stow`.
-    *   Set up your Git configuration.
-
-## Manual Installation
-
-If you prefer to install manually, you can follow these steps:
-
-1.  **Install Homebrew**:
-
+1.  **Install Homebrew:**
     ```bash
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     ```
 
-2.  **Install Git and Stow**:
-
+2.  **Install Git:**
     ```bash
-    brew install git stow
+    brew install git
     ```
 
-3.  **Clone the repository**:
+3.  **Install Oh My Zsh:**
+    ```bash
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    ```
 
+4.  **Clone Dotfiles Repository (via SSH):**
     ```bash
     git clone git@github.com:gn-pmcgeough/dotfiles.git ~/.dotfiles
     ```
 
-4.  **Run the installer**:
-
+5.  **Install Brewfile Contents:**
     ```bash
     cd ~/.dotfiles
-    make install
+    brew bundle --file=Brewfile
     ```
 
-## Available Commands
+6.  **Stow Dotfiles:**
+    This will create the necessary symlinks for your configuration files.
+    ```bash
+    stow .
+    ```
 
-This project uses a `Makefile` for common commands:
+7.  **Configure Git:**
+    ```bash
+    git config --global user.name "gn-pmcgeough"
+    git config --global user.email "pierce.mcgeough@nbcuni.com"
+    ```
 
-*   `make install`: Run the full installation process.
-*   `make sync`: Pull the latest changes from the Git repository and sync your local setup.
+## Maintenance
+
+This repository includes a `Makefile` and a `sync.sh` script to help you manage your dotfiles.
+
+### Syncing
+
+To pull the latest changes from the repository and apply updates to Homebrew and your dotfiles, you can run the `sync` command:
+
+```bash
+make sync
+```
+This will run the `sync.sh` script, which automatically checks for changes and applies them.
+
+### Available Commands
+
+The `Makefile` provides several useful commands:
+
+*   `make sync`: Pull the latest changes and sync your local setup.
 *   `make update-brew`: Update only Homebrew packages.
 *   `make update-stow`: Re-apply the dotfile symlinks.
 *   `make status`: Show the git status and the sync log.
