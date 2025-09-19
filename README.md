@@ -41,7 +41,7 @@ If you prefer to install manually, you can follow these steps:
 3.  **Clone the repository**:
 
     ```bash
-    git clone https://github.com/gn-pmcgeough/dotfiles.git ~/.dotfiles
+    git clone git@github.com:gn-pmcgeough/dotfiles.git ~/.dotfiles
     ```
 
 4.  **Run the installer**:

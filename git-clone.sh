@@ -3,16 +3,42 @@
 echo "Cloning repositories..."
 
 BASE_DIR="$HOME/brs/development"
-REPO_LIST="repos.txt"
 
-if [ ! -f "$REPO_LIST" ]; then
-    echo "Repository list not found: $REPO_LIST"
-    exit 1
-fi
+# List of repositories to clone
+# Format: <repository_url> <target_directory>
+REPOS="
+git@github.com:gn-pmcgeough/database.git database
+git@github.com:gn-pmcgeough/documents.git documents
+git@github.com:gn-pmcgeough/jira.git jira
+git@github.com:gn-pmcgeough/postman.git postman
+git@github.com:gn-pmcgeough/tools.git tools
+git@github.com:gn-pmcgeough/laravel-queue-rabbitmq.git apps/laravel-queue-rabbitmq
+git@github.com:GolfNowEng/brs-admin-api.git apps/brs-admin-api
+git@github.com:GolfNowEng/brs-admin-app.git apps/brs-admin-app
+git@github.com:GolfNowEng/brs-competitions-module.git apps/brs-competitions-module
+git@github.com:GolfNowEng/brs-consents-api.git apps/brs-consents-api
+git@github.com:GolfNowEng/brs-directory-service-api.git apps/brs-directory-service-api
+git@github.com:GolfNowEng/brs-facilities-module-admin-frontend.git apps/brs-facilities-module-admin-frontend
+git@github.com:GolfNowEng/brs-facilities-module-api.git apps/brs-facilities-module-api
+git@github.com:GolfNowEng/brs-facilities-module-frontend.git apps/brs-facilities-module-frontend
+git@github.com:GolfNowEng/brs-members-module.git apps/brs-members-module
+git@github.com:GolfNowEng/brs-open-competitions.git apps/brs-open-competitions
+git@github.com:GolfNowEng/brs-organisation-service-api.git apps/brs-organisation-service-api
+git@github.com:GolfNowEng/brs-rules-api.git apps/brs-rules-api
+git@github.com:GolfNowEng/brs-teesheet.git apps/brs-teesheet
+git@github.com:GolfNowEng/brs-visitors-module.git apps/brs-visitors-module
+git@github.com:GolfNowEng/memberships-api.git apps/memberships-api
+git@github.com:GolfNowEng/memberships-frontend.git apps/memberships-frontend
+git@github.com:GolfNowEng/pds-infra-emulator.git apps/pds-infra-emulator
+git@github.com:GolfNowEng/person-data-aggregation-tool.git apps/person-data-aggregation-tool
+git@github.com:GolfNowEng/sync-report.git apps/sync-report
+git@github.com:GolfNowEng/teesheet-api-client.git apps/teesheet-api-client
+git@github.com:GolfNowEng/wallet-service.git apps/wallet-service
+"
 
-while read -r repo dir; do
-    # Skip empty lines or comments
-    [[ -z "$repo" || "$repo" =~ ^#.*$ ]] && continue
+echo "$REPOS" | while read -r repo dir; do
+    # Skip empty lines
+    [ -z "$repo" ] && continue
 
     TARGET_DIR="$BASE_DIR/$dir"
     if [ ! -d "$TARGET_DIR" ]; then
@@ -21,7 +47,6 @@ while read -r repo dir; do
     else
         echo "Directory $TARGET_DIR already exists, skipping clone."
     fi
-
-done < "$REPO_LIST"
+done
 
 echo "Repository cloning complete."

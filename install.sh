@@ -43,7 +43,7 @@ install_oh_my_zsh() {
     if [[ ! -d "$HOME/.oh-my-zsh" ]]; then
         print_status "Installing Oh My Zsh..."
         # Run the installer non-interactively, without changing shell
-        sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+        sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     else
         print_status "Oh My Zsh already installed"
     fi
