@@ -33,6 +33,8 @@ alias docker-quit='docker-down-all && osascript -e '\''quit app "Docker Desktop"
 
 # Tools
 alias git-dirty='~/brs/development/tools/ul-git.sh'
+alias directory-service-on='~/brs/development/tools/ul-directory-service-on.sh'
+alias pds-emulator-on='(cd ~/brs/development/apps/pds-infra-emulator && docker build -t pds-infra-emulator . && docker run -p 8000:8000 -v $(pwd)/config:/var/www/html/config pds-infra-emulator)'
 
 
 # App Specific
