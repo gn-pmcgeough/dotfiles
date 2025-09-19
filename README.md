@@ -11,14 +11,18 @@ This guide provides instructions for a manual installation of the dotfiles.
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     ```
 
-2.  **Install Git:**
-    ```bash
-    brew install git
-    ```
-
-3.  **Install Oh My Zsh:**
+2.  **Install Oh My Zsh:**
     ```bash
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    ```
+
+3.  **Install Git:**
+    ```bash
+    brew install git
+
+    # after install set user details
+    git config --global user.name "gn-pmcgeough"
+    git config --global user.email "pierce.mcgeough@nbcuni.com"
     ```
 
 4.  **Clone Dotfiles Repository (via SSH):**
@@ -36,12 +40,6 @@ This guide provides instructions for a manual installation of the dotfiles.
     This will create the necessary symlinks for your configuration files.
     ```bash
     stow .
-    ```
-
-7.  **Configure Git:**
-    ```bash
-    git config --global user.name "gn-pmcgeough"
-    git config --global user.email "pierce.mcgeough@nbcuni.com"
     ```
 
 ## Maintenance
