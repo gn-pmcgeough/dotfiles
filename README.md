@@ -53,6 +53,12 @@ This guide provides instructions for a manual installation of the dotfiles.
     stow .
     ```
 
+8.  **Install Zsh Theme:**
+    Copy the custom Zsh theme to the Oh My Zsh themes directory. The `.zshrc` in this repository is already configured to use this theme.
+    ```bash
+    mkdir -p ~/.oh-my-zsh/custom/themes && cp pierce.zsh-theme ~/.oh-my-zsh/custom/themes/pierce.zsh-theme
+    ```
+
 ## Maintenance
 
 This repository includes a `Makefile` and a `sync.sh` script to help you manage your dotfiles.
