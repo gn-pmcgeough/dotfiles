@@ -7,11 +7,15 @@ These are my personal dotfiles for macOS, managed with GNU Stow and Homebrew.
 This guide provides instructions for a manual installation of the dotfiles.
 
 1.  **Install Homebrew:**
+
+    https://brew.sh/
     ```bash
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     ```
 
 2.  **Install Oh My Zsh:**
+
+    https://ohmyz.sh/
     ```bash
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     ```
@@ -25,7 +29,7 @@ This guide provides instructions for a manual installation of the dotfiles.
     git config --global user.email "pierce.mcgeough@nbcuni.com"
     ```
 
-4.  **Clone Dotfiles Repository (via SSH):**
+4.  **Clone Dotfiles Repository:**
     ```bash
     git clone git@github.com:gn-pmcgeough/dotfiles.git ~/.dotfiles
     ```
