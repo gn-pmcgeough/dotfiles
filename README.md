@@ -41,7 +41,13 @@ This guide provides instructions for a manual installation of the dotfiles.
     brew bundle --file=Brewfile
     ```
 
-6.  **Stow Dotfiles:**
+6.  **Back up existing dotfiles:**
+    Before creating symlinks, run the backup script to save any existing dotfiles.
+    ```bash
+    ./backup_dotfiles.sh
+    ```
+
+7.  **Stow Dotfiles:**
     This will create the necessary symlinks for your configuration files.
     ```bash
     stow .
