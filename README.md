@@ -12,6 +12,7 @@ This guide provides instructions for a manual installation of the dotfiles.
     ```bash
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     ```
+    Don't forgot to run the brew commands shown in the iterminal after install.
 
 2.  **Install Oh My Zsh:**
 
