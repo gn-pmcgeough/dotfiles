@@ -31,25 +31,10 @@ cd ~/.dotfiles
 ./install.sh
 ```
 
-## Maintenance
-
-This repository includes a `Makefile` and a `sync.sh` script to help you manage your dotfiles.
-
-### Syncing
-
-To pull the latest changes from the repository and apply updates to Homebrew and your dotfiles, you can run the `sync` command:
-
+### Step 4: Stow to symlink
 ```bash
-make sync
+stow zsh
 ```
-This will run the `sync.sh` script, which automatically checks for changes and applies them.
 
-### Available Commands
 
-The `Makefile` provides several useful commands:
-
-*   `make sync`: Pull the latest changes and sync your local setup.
-*   `make update-brew`: Update only Homebrew packages.
-*   `make update-stow`: Re-apply the dotfile symlinks.
-*   `make status`: Show the git status and the sync log.
-*   `make clean`: Clean up backup files and logs.
+### Step 5: Copy custom.zsh-theme to ~/.oh-my-zsh/custom/themes/example.zsh-theme
