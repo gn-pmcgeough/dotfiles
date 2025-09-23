@@ -4,60 +4,32 @@ These are my personal dotfiles for macOS, managed with GNU Stow and Homebrew.
 
 ## Installation
 
-This guide provides instructions for a manual installation of the dotfiles.
+Automated setup is available via bootstrap and install scripts.
 
-1.  **Install Homebrew:**
+### Step 1: Run the Bootstrap Script
 
-    https://brew.sh/
-    ```bash
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    ```
-    Don't forgot to run the brew commands shown in the iterminal after install.
+This command will install the Xcode Command Line Tools, Oh My Zsh, and Homebrew.
 
-2.  **Install Oh My Zsh:**
+```bash
+curl -fsSL https://raw.githubusercontent.com/gn-pmcgeough/dotfiles/main/bootstrap.sh | bash
+```
 
-    https://ohmyz.sh/
-    ```bash
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-    ```
+### Step 2: Clone the Repository
 
-3.  **Install Git:**
-    ```bash
-    brew install git
+You'll need to clone this repository to your local machine to complete the installation.
 
-    # after install set user details
-    git config --global user.name "gn-pmcgeough"
-    git config --global user.email "pierce.mcgeough@nbcuni.com"
-    ```
+```bash
+git clone git@github.com:gn-pmcgeough/dotfiles.git ~/.dotfiles
+```
 
-4.  **Clone Dotfiles Repository:**
-    ```bash
-    git clone git@github.com:gn-pmcgeough/dotfiles.git ~/.dotfiles
-    ```
+### Step 3: Run the Install Script
 
-5.  **Install Brewfile Contents:**
-    ```bash
-    cd ~/.dotfiles
-    brew bundle --file=Brewfile
-    ```
+Finally, change into the dotfiles directory and run the install script. This will install all applications and tools from the `Brewfile` and configure your environment.
 
-6.  **Back up existing dotfiles:**
-    Before creating symlinks, run the backup script to save any existing dotfiles.
-    ```bash
-    ./backup_dotfiles.sh
-    ```
-
-7.  **Stow Dotfiles:**
-    This will create the necessary symlinks for your configuration files.
-    ```bash
-    stow .
-    ```
-
-8.  **Install Zsh Theme:**
-    Copy the custom Zsh theme to the Oh My Zsh themes directory. The `.zshrc` in this repository is already configured to use this theme.
-    ```bash
-    mkdir -p ~/.oh-my-zsh/custom/themes && cp pierce.zsh-theme ~/.oh-my-zsh/custom/themes/pierce.zsh-theme
-    ```
+```bash
+cd ~/.dotfiles
+./install.sh
+```
 
 ## Maintenance
 
