@@ -43,3 +43,8 @@ fi
 
 # Update Homebrew recipes
 brew update
+
+# Install git
+brew install git
+
+

@@ -4,40 +4,25 @@ These are my personal dotfiles for macOS. They are designed to automate the setu
 
 This setup uses [GNU Stow](https://www.gnu.org/software/stow/) to manage symlinks and [Homebrew](https://brew.sh/) for package installation.
 
-## What's Included?
-
-This configuration installs a variety of command-line tools and GUI applications, including:
-
-*   **Shell:** Zsh with Oh My Zsh
-*   **Terminal:** iTerm2
-*   **Package Manager:** Homebrew
-*   **Version Control:** Git
-*   **Programming Languages & Runtimes:** Node.js, PHP, OpenJDK
-*   **Development Tools:** Composer, Postman
-*   **IDEs & Editors:** Visual Studio Code, PhpStorm, Rider
-*   **Browsers:** Google Chrome, Firefox
-*   **Productivity:** Slack, Notion, Todoist, 1Password, Rectangle
-
-For a complete list of installed packages, see the `Brewfile`.
 
 ## Installation
 
 The installation process is automated with a series of scripts.
 
-### Step 1: Clone the Repository
+### Step 1: Run the Bootstrap Script
+
+This command will install Git, Xcode Command Line Tools, Oh My Zsh, and Homebrew.
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/gn-pmcgeough/dotfiles/main/bootstrap.sh | bash
+```
+
+### Step 2: Clone the Repository
 
 You'll need to clone this repository to your local machine to complete the installation.
 
 ```bash
 git clone git@github.com:gn-pmcgeough/dotfiles.git ~/dotfiles
-```
-
-### Step 2: Run the Bootstrap Script
-
-This command will install the Xcode Command Line Tools, Oh My Zsh, and Homebrew.
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/gn-pmcgeough/dotfiles/main/bootstrap.sh | bash
 ```
 
 ### Step 3: Run the Install Script
