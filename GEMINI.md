@@ -27,12 +27,12 @@ To set up a new macOS environment using these dotfiles, follow these steps:
 
 2.  **Clone the repository:**
     ```bash
-    git clone git@github.com:gn-pmcgeough/dotfiles.git ~/.dotfiles
+    git clone git@github.com:gn-pmcgeough/dotfiles.git ~/dotfiles
     ```
 
 3.  **Install applications and tools:**
     ```bash
-    cd ~/.dotfiles
+    cd ~/dotfiles
     ./install.sh
     ```
 

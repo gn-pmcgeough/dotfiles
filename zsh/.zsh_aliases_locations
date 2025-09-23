@@ -1,5 +1,5 @@
 # General Aliases
-alias cd-dotfiles="cd ~/.dotfiles"
+alias cd-dotfiles="cd ~/dotfiles"
 alias cd-dev="cd ~/brs/development"
 alias cd-apps="cd ~/brs/development/apps"
 alias cd-database="cd ~/brs/development/database"

@@ -37,7 +37,7 @@ curl -fsSL https://raw.githubusercontent.com/gn-pmcgeough/dotfiles/main/bootstra
 You'll need to clone this repository to your local machine to complete the installation.
 
 ```bash
-git clone git@github.com:gn-pmcgeough/dotfiles.git ~/.dotfiles
+git clone git@github.com:gn-pmcgeough/dotfiles.git ~/dotfiles
 ```
 
 ### Step 3: Run the Install Script
@@ -45,7 +45,7 @@ git clone git@github.com:gn-pmcgeough/dotfiles.git ~/.dotfiles
 Change into the dotfiles directory and run the install script. This will install all applications and tools from the `Brewfile` and configure your environment.
 
 ```bash
-cd ~/.dotfiles
+cd ~/dotfiles
 ./install.sh
 ```
 

@@ -32,12 +32,12 @@ This guide provides instructions for a manual installation of the dotfiles.
 
 4.  **Clone Dotfiles Repository:**
     ```bash
-    git clone git@github.com:gn-pmcgeough/dotfiles.git ~/.dotfiles
+    git clone git@github.com:gn-pmcgeough/dotfiles.git ~/dotfiles
     ```
 
 5.  **Install Brewfile Contents:**
     ```bash
-    cd ~/.dotfiles
+    cd ~/dotfiles
     brew bundle --file=Brewfile
     ```
 
