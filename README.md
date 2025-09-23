@@ -56,5 +56,5 @@ stow zsh
 Copy the `custom.zsh-theme` file to the Oh My Zsh custom themes directory:
 
 ```bash
-cp custom.zsh-theme ~/.oh-my-zsh/custom/themes/example.zsh-theme
+cp custom.zsh-theme ~/.oh-my-zsh/custom/themes/custom.zsh-theme
 ```
