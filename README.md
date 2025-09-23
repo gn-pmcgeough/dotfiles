@@ -24,20 +24,20 @@ For a complete list of installed packages, see the `Brewfile`.
 
 The installation process is automated with a series of scripts.
 
-### Step 1: Run the Bootstrap Script
-
-This command will install the Xcode Command Line Tools, Oh My Zsh, and Homebrew.
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/gn-pmcgeough/dotfiles/main/bootstrap.sh | bash
-```
-
-### Step 2: Clone the Repository
+### Step 1: Clone the Repository
 
 You'll need to clone this repository to your local machine to complete the installation.
 
 ```bash
 git clone git@github.com:gn-pmcgeough/dotfiles.git ~/dotfiles
+```
+
+### Step 2: Run the Bootstrap Script
+
+This command will install the Xcode Command Line Tools, Oh My Zsh, and Homebrew.
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/gn-pmcgeough/dotfiles/main/bootstrap.sh | bash
 ```
 
 ### Step 3: Run the Install Script
