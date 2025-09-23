@@ -1,4 +1,5 @@
 #!/bin/sh
+set -euo pipefail  # Exit on error, undefined vars, pipe failures
 
 echo "Bootstrapping your Mac..."
 
@@ -44,7 +45,5 @@ fi
 # Update Homebrew recipes
 brew update
 
-# Install git
+# Install Git
 brew install git
-
-

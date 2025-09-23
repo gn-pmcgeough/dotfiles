@@ -1,4 +1,5 @@
 #!/bin/sh
+set -euo pipefail  # Exit on error, undefined vars, pipe failures
 
 echo "Cloning repositories..."
 
