@@ -25,6 +25,11 @@ fi
 
 # Check for Oh My Zsh and install if we don't have it
 if test ! $(which omz); then
+    # Remove existing oh-my-zsh directory if it exists but omz command doesn't work
+    if [ -d "$HOME/.oh-my-zsh" ] && ! command -v omz &>/dev/null; then
+        echo "Removing incomplete Oh My Zsh installation..."
+        rm -rf "$HOME/.oh-my-zsh"
+    fi
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
