@@ -18,8 +18,10 @@ curl -fsSL https://raw.githubusercontent.com/gn-pmcgeough/dotfiles/master/bootst
 ```
 
 ### Step 2: Configure Git Settings
+
+After install set user details
+
 ```bash
-# after install set user details
 git config --global user.name "gn-pmcgeough"
 git config --global user.email "pierce.mcgeough@nbcuni.com"
 ```
