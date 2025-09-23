@@ -14,14 +14,14 @@ The installation process is automated with a series of scripts.
 This command will install Git, Xcode Command Line Tools, Oh My Zsh, and Homebrew.
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/gn-pmcgeough/dotfiles/main/bootstrap.sh | bash
+curl -fsSL https://raw.githubusercontent.com/gn-pmcgeough/dotfiles/master/bootstrap.sh | bash
 ```
 
 ### Step 2: Configure Git Settings
 ```bash
-    # after install set user details
-    git config --global user.name "gn-pmcgeough"
-    git config --global user.email "pierce.mcgeough@nbcuni.com"
+# after install set user details
+git config --global user.name "gn-pmcgeough"
+git config --global user.email "pierce.mcgeough@nbcuni.com"
 ```
 
 ### Step 3: Clone the Repository
