@@ -3,7 +3,9 @@ set -euo pipefail  # Exit on error, undefined vars, pipe failures
 
 # Install all our dependencies with bundle (See Brewfile)
 brew tap homebrew/bundle
-brew bundle --file ./Brewfile
+
+brew bundle --file ./Brewfile.base
+brew bundle --file ./Brewfile.dev
 
 # Create a projects directories
 mkdir $HOME/brs/development
