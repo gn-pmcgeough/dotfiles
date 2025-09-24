@@ -3,9 +3,6 @@ set -euo pipefail  # Exit on error, undefined vars, pipe failures
 
 echo "Bootstrapping your Mac..."
 
-# Back up existing zsh files
-./scripts/backup.sh
-
 # Check if Xcode Command Line Tools are installed
 if ! xcode-select -p &>/dev/null; then
     echo "Xcode Command Line Tools not found. Installing..."

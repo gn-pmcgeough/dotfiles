@@ -1,6 +1,9 @@
 #!/bin/sh
 set -euo pipefail  # Exit on error, undefined vars, pipe failures
 
+# Back up existing zsh files
+./scripts/backup.sh
+
 # Install all our dependencies with bundle (See Brewfile)
 brew tap homebrew/bundle
 
