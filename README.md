@@ -48,6 +48,7 @@ cd ~/dotfiles
 Use GNU Stow to create symlinks for the configuration files. For example, to symlink the Zsh configuration:
 
 ```bash
+./scripts/backup.sh
 stow zsh
 ```
 

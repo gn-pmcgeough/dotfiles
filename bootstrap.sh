@@ -3,18 +3,8 @@ set -euo pipefail  # Exit on error, undefined vars, pipe failures
 
 echo "Bootstrapping your Mac..."
 
-# Backs up existing .zshrc and .zsh_* files from $HOME
-if [ -f "$HOME/.zshrc" ]; then
-    mv "$HOME/.zshrc" "$HOME/.zshrc.bak"
-    echo "Backed up existing .zshrc to .zshrc.bak"
-fi
-
-for file in $HOME/.zsh_*; do
-    if [ -f "$file" ]; then
-        mv "$file" "$file.bak"
-        echo "Backed up existing $file to $file.bak"
-    fi
-done
+# Back up existing zsh files
+./scripts/backup.sh
 
 # Check if Xcode Command Line Tools are installed
 if ! xcode-select -p &>/dev/null; then
