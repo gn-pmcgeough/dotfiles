@@ -11,6 +11,9 @@ brew bundle --file ./Brewfile.base
 echo "Installing development Brewfile dependencies..."
 brew bundle --file ./Brewfile.dev
 
+echo "Installing Mac Brewfile dependencies..."
+brew bundle --file ./Brewfile.mas
+
 # Create a projects directories
 echo "Creating development directory..."
 mkdir $HOME/brs/development
