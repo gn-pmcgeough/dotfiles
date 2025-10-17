@@ -125,3 +125,15 @@ if [ -f '/Users/206678185/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/20667
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/206678185/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/206678185/google-cloud-sdk/completion.zsh.inc'; fi
+
+
+# Herd injected PHP 8.4 configuration.
+export HERD_PHP_84_INI_SCAN_DIR="/Users/206678185@bwt3.com/Library/Application Support/Herd/config/php/84/"
+
+
+# Herd injected PHP binary.
+export PATH="/Users/206678185@bwt3.com/Library/Application Support/Herd/bin/":$PATH
+
+
+# Herd injected PHP 8.5 configuration.
+export HERD_PHP_85_INI_SCAN_DIR="/Users/206678185@bwt3.com/Library/Application Support/Herd/config/php/85/"

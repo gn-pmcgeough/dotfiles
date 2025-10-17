@@ -24,7 +24,7 @@ After install set user details and git settings
 ```bash
 git config --global user.name "gn-pmcgeough"
 git config --global user.email "pierce.mcgeough@nbcuni.com"
-git config --global core.pager ""
+git config --global core.pager "less -FRX"
 ```
 
 ### Step 3: Clone the Repository
