@@ -23,6 +23,7 @@ git@github.com:GolfNowEng/brs-facilities-module-admin-frontend.git apps/brs-faci
 git@github.com:GolfNowEng/brs-facilities-module-api.git apps/brs-facilities-module-api
 git@github.com:GolfNowEng/brs-facilities-module-frontend.git apps/brs-facilities-module-frontend
 git@github.com:GolfNowEng/brs-members-module.git apps/brs-members-module
+git@github.com:GolfNowEng/brs-notification-api.git apps/brs-notification-api
 git@github.com:GolfNowEng/brs-open-competitions.git apps/brs-open-competitions
 git@github.com:GolfNowEng/brs-organisation-service-api.git apps/brs-organisation-service-api
 git@github.com:GolfNowEng/brs-rules-api.git apps/brs-rules-api

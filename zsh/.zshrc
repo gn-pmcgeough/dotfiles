@@ -4,6 +4,9 @@ export DOTFILES=$HOME/dotfiles
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="$HOME/.composer/vendor/bin:$PATH"
+export PATH="/Applications/Docker.app/Contents/Resources/bin:$PATH"
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export PATH="/opt/homebrew/lib/ruby/gems/4.0.1/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -137,3 +140,19 @@ export PATH="/Users/206678185@bwt3.com/Library/Application Support/Herd/bin/":$P
 
 # Herd injected PHP 8.5 configuration.
 export HERD_PHP_85_INI_SCAN_DIR="/Users/206678185@bwt3.com/Library/Application Support/Herd/config/php/85/"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+export PATH="$PATH:$HOME/fvm/default/bin"
+export GEM_HOME="$HOME/.gem"
+export PATH="$GEM_HOME/bin:$PATH"
+export PATH="$PATH":"$HOME/.pub-cache/bin"
+
+# >>> golfnow-keystone Configuration >>>
+# Auto-generated - DO NOT EDIT MANUALLY
+export ANTHROPIC_AUTH_TOKEN="keystone-bedrock-4cd0bc9e-9afc-4f44-8ebd-3534546c0082"
+export ANTHROPIC_BASE_URL="https://golfnow-keystone.vdpv.ai"
+export ANTHROPIC_DEFAULT_SONNET_MODEL="anthropic.claude-sonnet-4-5-20250929-v1:0"
+export ANTHROPIC_DEFAULT_HAIKU_MODEL="anthropic.claude-3-5-haiku-20241022-v1:0"
+# <<< golfnow-keystone Configuration <<<

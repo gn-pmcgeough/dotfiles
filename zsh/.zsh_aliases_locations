@@ -11,16 +11,20 @@ alias cd-tools="cd ~/brs/development/tools"
 
 # BRS Teesheet
 alias cd-brs-teesheet="cd ~/brs/development/apps/brs-teesheet"
-alias cd-brs-consents-api="cd ~/brs/development/apps/brs-consents-api"
-alias cd-brs-members-module="cd ~/brs/development/apps/brs-members-module"
-alias cd-brs-visitors-module="cd ~/brs/development/apps/brs-visitors-module"
-alias cd-teesheet-api-client="cd ~/brs/development/apps/teesheet-api-client"
-
 alias cd-teesheet="cd ~/brs/development/apps/brs-teesheet"
+alias cd-brs-consents-api="cd ~/brs/development/apps/brs-consents-api"
 alias cd-consents="cd ~/brs/development/apps/brs-consents-api"
+alias cd-brs-members-module="cd ~/brs/development/apps/brs-members-module"
 alias cd-members="cd ~/brs/development/apps/brs-members-module"
+alias cd-brs-visitors-module="cd ~/brs/development/apps/brs-visitors-module"
 alias cd-visitors="cd ~/brs/development/apps/brs-visitors-module"
+alias cd-teesheet-api-client="cd ~/brs/development/apps/teesheet-api-client"
 alias cd-rts="cd ~/brs/development/apps/teesheet-api-client"
+
+# BRS Services
+alias cd-brs-notifications="cd ~/brs/development/apps/brs-notification-api"
+alias cd-notifications="cd ~/brs/development/apps/brs-notification-api"
+alias cd-brs-notification-api-template="cd ~/brs/development/apps/brs-notification-api-template"
 
 # BRS Modules
 alias cd-brs-open-competitions="cd ~/brs/development/apps/brs-open-competitions"
@@ -50,5 +54,15 @@ alias cd-brs-golf-plus-frontend="cd ~/brs/development/apps/brs-facilities-module
 # G1/Memberships
 alias cd-memberships-api="cd ~/brs/development/apps/memberships-api"
 alias cd-memberships-frontend="cd ~/brs/development/apps/memberships-frontend"
+alias cd-sync-connector="cd ~/brs/development/apps/sync-connector"
 alias cd-sync-report="cd ~/brs/development/apps/sync-report"
 alias cd-wallet-service="cd ~/brs/development/apps/wallet-service"
+
+# Notifications Consumers
+alias cd-brs-notification-consumer-push="cd ~/brs/development/apps/brs-notification-consumer-push"
+alias cd-brs-notification-consumer-push="cd ~/brs/development/apps/brs-notification-consumer-push"
+alias cd-brs-notification-consumer-sparkpost="cd ~/brs/development/apps/brs-notification-consumer-sparkpost"
+
+# ???
+alias cd-brs-club-messages-api="cd ~/brs/development/apps/brs-club-messages-api"
+alias cd-brs-flutter-members-app="cd ~/brs/development/apps/brs-flutter-members-app"
