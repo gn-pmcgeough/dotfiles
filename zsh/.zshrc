@@ -160,4 +160,3 @@ export ANTHROPIC_DEFAULT_HAIKU_MODEL="anthropic.claude-3-5-haiku-20241022-v1:0"
 
 # Herd injected PHP 7.4 configuration.
 export HERD_PHP_74_INI_SCAN_DIR="/Users/206678185@bwt3.com/Library/Application Support/Herd/config/php/74/"
-export SLACK_SERVICE_TOKEN="xoxp-8833583107490-9398327892497-11575442214272-d77267c7b1acc652485cd2d0290baec0"
